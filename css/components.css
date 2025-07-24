@@ -1,0 +1,22 @@
+/* /////// PANEL ///////  */
+
+/* Card Profile */
+.panel .card-side-profile{padding-top:0}
+.panel .card-side-profile img{border-radius:50%;width:130px;height:130px;object-fit:cover}
+.panel .card-side-profile h2{color:#ceaa42; margin-top: 0}
+.panel .card-side-profile .text-muted{color:#555456;font-family:"Manrope Regular";font-size:13px;margin-bottom: 0}
+.panel .card-side-profile .button{margin-top:15px;font-family:"Montserrat Bold";background:#ceaa42}
+.dark .panel .card-side-profile h2{color:#fff}
+.dark .panel .card-side-profile .text-muted{margin-top:0;color:#ccc;font-family:"Manrope Regular";font-size:13px}
+
+
+/* List Summary */
+.list.list-side-summary.inset{background:#f1f1f2}
+.list.list-side-summary li .item-media .icon{font-size:20px;color:#ceaa42}
+.list.list-side-summary li .item-title{font-family:"Compose";font-size:18px;color:#000}
+.list.list-side-summary li .badge{background:#000;color:#ccc}
+
+.dark .list.list-side-summary.inset{background:#121212}
+.dark .list.list-side-summary li .item-media .icon{font-size:20px;color:#ceaa42}
+.dark .list.list-side-summary li .item-title{font-family:"Compose";font-size:16px;color:#fff}
+.dark .list.list-side-summary li .badge{background:#000;color:#ccc}
