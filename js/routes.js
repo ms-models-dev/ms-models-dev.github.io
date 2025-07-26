@@ -13,6 +13,13 @@ var routes = [
     url: './pages/events.html',
   },
   {
+    path: '/event-details/',
+    url: './pages/event-details.html',
+    options: {
+      transition: 'f7-parallax',
+    },
+  },
+  {
     path: '/earnings/',
     url: './pages/earnings.html',
   },

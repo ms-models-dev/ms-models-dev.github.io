@@ -26,6 +26,7 @@
   <!-- web-end -->
   <link rel="stylesheet" href="framework7/framework7-bundle.min.css">
   <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/dirty-kitchen.css">
@@ -33,7 +34,7 @@
 <body>
   <div id="app">
     <!-- Left panel with cover effect-->
-    <div class="panel panel-left panel-reveal panel-init">
+    <div class="panel panel-left panel-reveal panel-init" data-visible-breakpoint="960">
       <div class="view">
         <div class="page">
           <div class="page-content">
@@ -42,7 +43,7 @@
             <!-- ----------------------- -->
             <div class="block text-align-center card-side-profile">
               <!-- Profile Picture -->
-              <img src="_data/model-bikalp.jpg" />
+              <img src="images/model-bikalp.jpg" />
 
               <!-- Model ID -->
               <h2 class="text-align-center no-margin-bottom">Hello Bikalp !</h2>
@@ -62,11 +63,11 @@
         <li>
            <div class="item-content">
             <div class="item-media">
-              <i class="icon material-icons if-md">badge</i>
+              <i class="icon material-icons if-md">card_membership</i>
               </div>
             <div class="item-inner">
               <div class="item-title">
-                MSO-02-8349834
+                Exclusive
               </div>
             </div>
           </div>
@@ -124,10 +125,160 @@
         </li>
       </ul>
     </div>
+<!-- ====================== BROWSE SHORTCUT MENU ====================== -->
+<div class="block-title">What's Happening</div>
+<div class="list links-list">
+  <ul>
+    <li><a href="#" data-view=".view-main" class="panel-close">What's Hot</a></li>
+    <li><a href="#" data-view=".view-main" class="panel-close">Trending Castings</a></li>
+    <li><a href="#" data-view=".view-main" class="panel-close">Closing Soon</a></li>
+    <li><a href="#" data-view=".view-main" class="panel-close">Editor's Picks</a></li>
+    <li><a href="#" data-view=".view-main" class="panel-close">For You</a></li>
+  </ul>
+</div>
+
+
+  <!-- ====================== LOCATION & INDUSTRY ACCORDION ====================== -->
+<div class="block-title">Browse Jobs</div>
+<div class="list accordion-list">
+  <ul>
+    <!-- By Location -->
+    <li class="accordion-item">
+      <a href="#" class="item-link item-content">
+        <div class="item-inner">
+          <div class="item-title">By Location</div>
+        </div>
+      </a>
+      <div class="accordion-item-content">
+        <div class="list links-list">
+          <ul>
+            <li><a href="#" data-view=".view-main" class="panel-close">In Your Area</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Across Your Country</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Across Your Region</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">WorldWide Access</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+
+    <!-- By Industry -->
+<li class="accordion-item">
+  <a href="#" class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title">By Job Type</div>
+    </div>
+  </a>
+  <div class="accordion-item-content">
+    <div class="list links-list">
+      <ul>
+        <li><a href="#" data-view=".view-main" class="panel-close">Modeling</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Runway / Fashion Shows</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Editorial / Print</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Commercial Modeling</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Fitness / Sports</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Swimwear / Underwear</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Hosting / Event Emcee</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Brand Ambassador</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Promotional Work</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Acting (TV, Film, Theater)</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Music Video Talent</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Influencer / Social Media</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Artistic / Conceptual</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Virtual / 3D Modeling</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Voice Work / Voiceover</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Background Talent</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Retail Promo</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Pageant Gigs</a></li>
+        <li><a href="#" data-view=".view-main" class="panel-close">Training / Mentorship </a></li>
+      </ul>
+    </div>
+  </div>
+</li>
+
+    <!-- By Industry -->
+    <li class="accordion-item">
+      <a href="#" class="item-link item-content">
+        <div class="item-inner">
+          <div class="item-title">By Industry</div>
+        </div>
+      </a>
+      <div class="accordion-item-content">
+        <div class="list links-list">
+          <ul>
+            <li><a href="#" data-view=".view-main" class="panel-close">Fashion</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Ads & Commercials</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">E-Commerce </a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Beauty & Grooming</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Fitness & Sports</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Travel & Hospitality</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Automotive</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Corporate & Lifestyle</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Entertainment & Events</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Retail / In-store</a></li>
+            <li><a href="#" data-view=".view-main" class="panel-close">Gaming / Tech</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
+
+
+<!-- ====================== MALE SPECIMEN UNIVERSE ====================== -->
+<div class="block-title">Male Specimen Universe</div>
+<div class="list links-list">
+  <ul>
+    <li><a href="#" data-view=".view-main" class="panel-close">MS Magazine</a></li>
+    <li><a href="#" data-view=".view-main" class="panel-close">MS+</a></li>
+    <li><a href="#" data-view=".view-main" class="panel-close">MS Coverage</a></li>
+    <li><a href="#" data-view=".view-main" class="panel-close">MS All-Access</a></li>
+  </ul>
+</div>
+
 
             <!-- --------------------------------------------------------------- -->
+            <div class="block-title">HELP &amps SUPPORT</div>
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a href="/about/" data-view=".view-main" class="panel-close">Help Center / FAQ</a>
+                </li>
+                <li>
+                  <a href="/form/" data-view=".view-main" class="panel-close">App Guide / How It Works</a>
+                </li>
+                <li>
+                  <a href="#" data-view=".view-main" class="panel-close">Release Notes</a>
+                </li>
+                <li>
+                  <a href="#" data-view=".view-main" class="panel-close">Tech Support</a>
+                </li>
+              </ul>
+            </div>
 
-            
+            <!-- --------------------------------------------------------------- -->
+            <div class="block-title">LEGAL</div>
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a href="/about/" data-view=".view-main" class="panel-close">About</a>
+                </li>
+                <li>
+                  <a href="/form/" data-view=".view-main" class="panel-close">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" data-view=".view-main" class="panel-close">Terms of Service</a>
+                </li>
+                <li>
+                  <a href="#" data-view=".view-main" class="panel-close">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+
+
+            <!-- --------------------------------------------------------------- -->
             <div class="block-title">CHANGE THEME</div>
             <div class="list">
               <ul>
@@ -179,23 +330,23 @@
         <div class="toolbar-inner">
           <a href="#view-home" class="tab-link tab-link-active">
             <i class="icon material-icons if-md">explore</i>
-            <span class="tabbar-label">Browse</span>
+            <!--<span class="tabbar-label">Browse</span> -->
           </a>
           <a href="#view-assignments" class="tab-link">
             <i class="icon material-icons if-md">assignment</i>
-            <span class="tabbar-label">Assignments</span>
+            <!--<span class="tabbar-label">Assignments</span> -->
           </a>
           <a href="#view-events" class="tab-link">
             <i class="icon material-icons if-md">event</i>
-            <span class="tabbar-label">Events</span>
+            <!--<span class="tabbar-label">Events</span> -->
           </a>
           <a href="#view-earnings" class="tab-link">
             <i class="icon material-icons if-md">account_balance_wallet</i>
-            <span class="tabbar-label">Earnings</span>
+            <!--<span class="tabbar-label">Earnings</span> -->
           </a>
           <a href="#view-saved" class="tab-link">
             <i class="icon material-icons if-md">bookmark</i>
-            <span class="tabbar-label">Saved</span>
+            <!-- span class="tabbar-label">Saved</span> -->
           </a>
         </div>
       </div>
@@ -229,57 +380,370 @@
 
           <!-- Scrollable page content-->
           <div class="page-content">
-            <div class="block">
-              <p>This is an example of tabs-layout application. The main point of such tabbed layout is that each tab contains independent view with its own routing and navigation.</p>
+<swiper-container  class="demo-swiper-multiple" space-between="0" autoplay="true" 
+  autoplay-delay="5000" 
+  autoplay-disable-on-interaction="false">
 
-              <p>Each tab/view may have different layout, different navbar type (dynamic, fixed or static) or without navbar like this tab.</p>
+              <swiper-slide>
+               
+
+
+  <div class="msmo-orbit-container">
+    <a href="/event-details/" class="link no-ripple">
+      <img src="images/events-01.jpg" class="img-responsive" />
+    </a>
+      <div class="orbit-container-toptitle">UPCOMING EVENTS</div>
+          <a href="/event-details/" class="link no-ripple">
+    <div class="orbit-container-title  no-ripple">Bench/ Fashion Week Summer Collection 2025/2026 </div> 
+        </a>
+<div class="orbit-container-subtitle">September 1 - 7, 2025 </div>
+<div class="orbit-container-text">Manila, Philippines</div>
+  </div>
+  
+  
+
+              </swiper-slide>
+              <swiper-slide>
+               
+  <div class="msmo-orbit-container">
+    <a href="/event-details/" class="link no-ripple">
+      <img src="images/events-02.jpg" class="img-responsive" />
+    </a>
+      <div class="orbit-container-toptitle">UPCOMING EVENTS</div>
+          <a href="/event-details/" class="link no-ripple">
+    <div class="orbit-container-title  no-ripple">London Fashion Week 2026 </div> 
+        </a>
+<div class="orbit-container-subtitle">September 3 - 14, 2025 </div>
+<div class="orbit-container-text">Milan, Italy</div>
+  </div>
+              </swiper-slide>
+              <swiper-slide>
+               
+  <div class="msmo-orbit-container">
+   <a href="/event-details/" class="link no-ripple">
+      <img src="images/events-03.jpg" class="img-responsive" />
+    </a>
+      <div class="orbit-container-toptitle">UPCOMING EVENTS</div>
+          <a href="/event-details/" class="link no-ripple">
+    <div class="orbit-container-title  no-ripple">Milan Fashion Week Spring Collection </div> 
+        </a>
+<div class="orbit-container-subtitle">September 3 - 14, 2025 </div>
+<div class="orbit-container-text">Milan, Italy</div>
+  </div>
+              </swiper-slide>
+ <swiper-slide>
+               
+  <div class="msmo-orbit-container">
+    <a href="/event-details/" class="link no-ripple">
+      <img src="images/events-04.jpg" class="img-responsive" />
+    </a>
+      <div class="orbit-container-toptitle">UPCOMING EVENTS</div>
+          <a href="/event-details/" class="link no-ripple">
+    <div class="orbit-container-title  no-ripple">New York Fashion Week Winter Collection 2025/2026 </div> 
+        </a>
+<div class="orbit-container-subtitle">November 3 - 14, 2025 </div>
+<div class="orbit-container-text">New York, USA</div>
+  </div>
+              </swiper-slide>
+
+
+            </swiper-container>
+
+
+
+            <div class="block msmo-block-header-big">
+              <h2>Discover Jobs Near You</h2>   
+
+              <p>Discover jobs in your location.</p>
             </div>
-            <div class="block-title">Navigation</div>
-            <div class="list list-strong inset list-dividers-ios">
-              <ul>
-                <li>
-                  <a href="/about/" class="item-content item-link">
-                    <div class="item-inner">
-                      <div class="item-title">About</div>
-                    </div>
+            <!-- ////////////////////////////////////////// -->
+
+
+    <div class="list media-list msmo-media-list-job-preview">
+      <ul>
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">ZARA Fall '25 Studio Shoot</div>
+        <div class="item-after">$500</div>
+      </div>
+      <div class="item-subtitle">Commercial Photoshoot  <span>&#9679;</span>  ZARA</div>
+      <div class="item-subtitle text">August 3, 2025</div>
+      <div class="item-text">5 mins ago</div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">Belo Men Skincare TVC</div>
+        <div class="item-after">$1,200</div>
+      </div>
+      <div class="item-subtitle">TV Commercial  <span>&#9679;</span>  Belo Medical Group</div>
+      <div class="item-subtitle text">August 6, 2025</div>
+      <div class="item-text">10 mins ago</div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">Bench/ Body Underwear Campaign</div>
+        <div class="item-after">$800</div>
+      </div>
+      <div class="item-subtitle">Print & Billboard  <span>&#9679;</span>  Bench</div>
+      <div class="item-subtitle text">August 4, 2025</div>
+      <div class="item-text">20 mins ago</div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">SM Men Fashion Week Finale</div>
+        <div class="item-after">$600</div>
+      </div>
+      <div class="item-subtitle">Runway Show <span>&#9679;</span> SM Fashion</div>
+      <div class="item-subtitle text">August 9, 2025</div>
+      <div class="item-text">30 mins ago</div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">Axe "Irresistible" Campaign</div>
+        <div class="item-after">$1,000</div>
+      </div>
+      <div class="item-subtitle">Digital Ad Campaign <span>&#9679;</span> Unilever</div>
+      <div class="item-subtitle text">August 7, 2025</div>
+      <div class="item-text">1 hour ago</div>
+    </div>
+  </a>
+</li>
+
+      </ul>
+    </div>
+
+
+
+
+            <div class="block msmo-block-header-big">
+              <h2>Suggested For You</h2>   
+              <p>Jobs tailored to your qualifications.</p>
+            </div>
+ <div class="list media-list msmo-media-list-job-preview">
+      <ul>
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">Axe "Irresistible" Campaign</div>
+        <div class="item-after">$1,000</div>
+      </div>
+      <div class="item-subtitle">Digital Ad Campaign  <span>&#9679;</span> Unilever</div>
+      <div class="item-subtitle text">August 7, 2025</div>
+      <div class="item-text">1 hour ago</div>
+    </div>
+  </a>
+</li>
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">Belo Men Skincare TVC</div>
+        <div class="item-after">$1,200</div>
+      </div>
+      <div class="item-subtitle">TV Commercial <span>&#9679;</span> Belo Medical Group</div>
+      <div class="item-subtitle text">August 6, 2025</div>
+      <div class="item-text">10 mins ago</div>
+    </div>
+  </a>
+</li>
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">ZARA Fall '25 Studio Shoot</div>
+        <div class="item-after">$500</div>
+      </div>
+      <div class="item-subtitle">Commercial Photoshoot <span>&#9679;</span> ZARA</div>
+      <div class="item-subtitle text">August 3, 2025</div>
+      <div class="item-text">5 mins ago</div>
+    </div>
+  </a>
+</li>
+
+
+
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">Bench/ Body Underwear Campaign</div>
+        <div class="item-after">$800</div>
+      </div>
+      <div class="item-subtitle">Print & Billboard <span>&#9679;</span> Bench</div>
+      <div class="item-subtitle text">August 4, 2025</div>
+      <div class="item-text">20 mins ago</div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link item-content">
+    <div class="item-inner">
+      <div class="item-title-row">
+        <div class="item-title">SM Men Fashion Week Finale</div>
+        <div class="item-after">$600</div>
+      </div>
+      <div class="item-subtitle">Runway Show <span>&#9679;</span> SM Fashion</div>
+      <div class="item-subtitle text">August 9, 2025</div>
+      <div class="item-text">30 mins ago</div>
+    </div>
+  </a>
+</li>
+
+
+
+      </ul>
+    </div>
+
+
+            <div class="block msmo-block-header-big">
+
+              <h2>Featured Clients</h2>   
+                <p>Explore clients and their job postings.
+              </p>
+            </div>
+
+  <div class="block-title ">TOP CLIENTS</div>
+  
+              <swiper-container class="demo-swiper-multiple" space-between="10" slides-per-view="3">
+                <swiper-slide>
+                  <img src="images/logo-versace.jpg" class="slider-thumbnail-img" >
+                  <div class="slider-thumbnail-title">Versace</div>
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="images/logo-rolex.jpg" class="slider-thumbnail-img" >
+                  <div class="slider-thumbnail-title">Rolex</div>
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="images/logo-gucci.jpg" class="slider-thumbnail-img" >
+                  <div class="slider-thumbnail-title">Guici</div>
+                </swiper-slide>
+   
+                <swiper-slide>
+                                    <a href="#" class="link no-ripple">
+                  <img src="images/logo-netflix.jpg" class="slider-thumbnail-img" >
+                </a>
+                  <div class="slider-thumbnail-title">Netflix Philippines</div>
+                </swiper-slide>
+                <swiper-slide>
+                              <a href="#" class="link no-ripple">
+                  <img src="images/logo-vogue.jpg" class="slider-thumbnail-img" >
+                </a>
+                  <div class="slider-thumbnail-title">Vogue</div>
+                </swiper-slide>
+                <swiper-slide>
+                                    <a href="#" class="link no-ripple">
+                  <img src="images/logo-louis-vuitton.jpg" class="slider-thumbnail-img" >
+                </a>
+                  <div class="slider-thumbnail-title">Louis Vuitton</div>
+                </swiper-slide>
+                <swiper-slide>
+                   <a href="#" class="link no-ripple">
+                  <img src="images/logo-chanel.jpg" class="slider-thumbnail-img" >
                   </a>
-                </li>
-                <li>
-                  <a href="/form/" class="item-content item-link">
-                    <div class="item-inner">
-                      <div class="item-title">Form</div>
-                    </div>
+                  <div class="slider-thumbnail-title">Chanel</div>
+                </swiper-slide>
+                <swiper-slide>
+                  <a href="#" class="link no-ripple">
+                    <img src="images/logo-ogilvy.jpg" class="slider-thumbnail-img">
                   </a>
-                </li>
-              </ul>
-            </div>
+                  <div class="slider-thumbnail-title">Ogilvy</div>
+                </swiper-slide>
+                <swiper-slide>
+                  <a href="#" class="link no-ripple">
+                    <img src="images/logo-balmain.jpg" class="slider-thumbnail-img">
+                  </a>
+                  
+                  <div class="slider-thumbnail-title">Balmain</div>
+                </swiper-slide>
+              </swiper-container>
+             
 
-            <div class="block-title">Modals</div>
-            <div class="block grid grid-cols-2 grid-gap">
-              <a href="#" class="button button-fill popup-open" data-popup="#my-popup">Popup</a>
-              <a href="#" class="button button-fill login-screen-open" data-login-screen="#my-login-screen">Login Screen</a>
-            </div>
+            <div class="block-title ">RECENTLY JOINED</div>
+  
+              <swiper-container class="demo-swiper-multiple" space-between="10" slides-per-view="3">
+                <swiper-slide>
+                                    <a href="#" class="link no-ripple">
+                  <img src="images/logo-bench.jpg" class="slider-thumbnail-img" >
+                </a>
+                  <div class="slider-thumbnail-title">Bench/</div>
+                </swiper-slide>
+                <swiper-slide>
+                   <a href="#" class="link no-ripple">
+                  <img src="images/logo-chanel.jpg" class="slider-thumbnail-img" >
+                  </a>
+                  <div class="slider-thumbnail-title">Chanel</div>
+                </swiper-slide>
+                <swiper-slide>
+                  <a href="#" class="link no-ripple">
+                    <img src="images/logo-uniqlo.jpg" class="slider-thumbnail-img">
+                  </a>
+                  <div class="slider-thumbnail-title">Uniqlo</div>
+                </swiper-slide>
 
-            <div class="block-title">Panels</div>
-            <div class="block grid grid-cols-2 grid-gap">
-              <a href="#" class="button button-fill panel-open" data-panel="left">Left Panel</a>
-              <a href="#" class="button button-fill panel-open" data-panel="right">Right Panel</a>
-            </div>
+                <swiper-slide>
+                  <img src="images/logo-versace.jpg" class="slider-thumbnail-img" >
+                  <div class="slider-thumbnail-title">Versace</div>
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="images/logo-rolex.jpg" class="slider-thumbnail-img" >
+                  <div class="slider-thumbnail-title">Versace</div>
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="images/logo-gucci.jpg" class="slider-thumbnail-img" >
+                  <div class="slider-thumbnail-title">Versace</div>
+                </swiper-slide>
+   
+                <swiper-slide>
+                                    <a href="#" class="link no-ripple">
+                  <img src="images/logo-netflix.jpg" class="slider-thumbnail-img" >
+                </a>
+                  <div class="slider-thumbnail-title">Netflix Philippines</div>
+                </swiper-slide>
+                <swiper-slide>
+                              <a href="#" class="link no-ripple">
+                  <img src="images/logo-vogue.jpg" class="slider-thumbnail-img" >
+                </a>
+                  <div class="slider-thumbnail-title">Vogue</div>
+                </swiper-slide>
 
-            <div class="list list-strong inset list-dividers-ios links-list">
-              <ul>
-                <li>
-                  <a href="/dynamic-route/blog/45/post/125/?foo=bar#about">Dynamic (Component) Route</a>
-                </li>
-                <li>
-                  <a href="/load-something-that-doesnt-exist/">Default Route (404)</a>
-                </li>
-                <li>
-                  <a href="/request-and-load/user/123456/">Request Data & Load</a>
-                </li>
-              </ul>
-            </div>
+                <swiper-slide>
+                  <a href="#" class="link no-ripple">
+                    <img src="images/logo-balmain.jpg" class="slider-thumbnail-img">
+                  </a>
+                  
+                  <div class="slider-thumbnail-title">Balmain</div>
+                </swiper-slide>
+              </swiper-container>
+          
+            <!-- ////////////////////////////////////// -->
+
+
           </div>
+          <!-- /Scrollable page content-->
         </div>
       </div>
 
@@ -313,6 +777,59 @@
         </div>
       </div>
     </div>
+
+<!-- Trigger Button -->
+<a href="#" class="button popup-open" data-popup=".popup-subscription">
+  Unlock Abroad Jobs
+</a>
+
+<!-- Popup -->
+<div class="popup popup-subscription">
+  <div class="view">
+    <div class="page">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="title">Access Abroad</div>
+          <div class="right">
+            <a class="link popup-close">
+              <i class="icon f7-icons">xmark_circle_fill</i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="page-content">
+        <div class="block text-align-center">
+          <h2>🌍 Go Global</h2>
+          <p>Get access to job opportunities outside your country.</p>
+
+          <!-- This block will be shown only if the user has balance -->
+          <div id="has-balance" style="display: none;">
+            <a href="#" class="button button-fill color-black">
+              Subscribe to Unlock
+            </a>
+            <p class="margin-top text-color-gray text-sm">
+              Your current location limits job visibility.
+              <br>Subscribing lets you unlock opportunities abroad.
+            </p>
+          </div>
+
+          <!-- This block will be shown if the user has no balance -->
+          <div id="no-balance" style="display: none;">
+            <p class="text-color-red text-lg font-medium">
+              ⚠️ You can’t subscribe.
+            </p>
+            <p class="text-color-gray">
+              You have zero balance in your earning wallet.
+              <br>You must work in your country first to earn credits.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <!-- Login Screen -->
     <div class="login-screen" id="my-login-screen">
@@ -359,6 +876,7 @@
   <!-- CORDOVA_PLACEHOLDER_DONT_REMOVE -->
   <!-- Framework7 library -->
   <script src="framework7/framework7-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <!-- Cordova APIs -->
   <script src="js/cordova-app.js"></script>
   

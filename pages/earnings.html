@@ -13,27 +13,483 @@
          </div>
          <div class="right">
             <a href="#" class="link icon-only">
-            <i class="icon material-icons if-md">inbox</i>
+            <i class="icon material-icons if-md">more_vert</i>
             </a>
          </div>
       </div>
    </div>
    <!-- /Top Navbar -->
-   <div class="page-content">
-      <div class="block-title">Assignments</div>
-      <div class="block">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae laudantium dignissimos est nobis
-            delectus nemo ea alias voluptatum architecto, amet similique, saepe iste consectetur in repellat ut minus
-            quibusdam!
-         </p>
-         <p>Molestias et distinctio porro nesciunt ratione similique, magni doloribus, rerum nobis, aliquam quae reiciendis
-            quasi modi. Nam a recusandae, fugiat in ea voluptates fuga eius, velit corrupti reprehenderit dignissimos
-            consequatur!
-         </p>
-         <p>Blanditiis, cumque quo adipisci. Molestiae, dolores dolorum quos doloremque ipsa ullam eligendi commodi
-            deserunt doloribus inventore magni? Ea mollitia veniam nostrum nihil, iusto doloribus a at! Ea molestiae ullam
-            delectus!
+   <!-- Tabbar -->
+          <div class="toolbar tabbar toolbar-top">
+            <div class="toolbar-inner">
+              <a href="#tab-earnings-01" class="tab-link tab-link-active">SUMMARY</a>
+              <a href="#tab-earnings-02" class="tab-link">TRANSACTIONS</a>
+            </div>
+          </div>
+   <!-- /Tabbar -->
+
+
+   <!-- ////////////////////////////////////// -->
+   <swiper-container class="tabs">
+      <!-- ////////////////////////////////////// -->
+      <swiper-slide id="tab-earnings-01" class="page-content tab tab-active">
+
+         <!-- -----------------------------  -->
+         <div class="block msmo-block-header-big">
+            <h1>My Earnings</h1>   
+            <p>See how much you've earned.</p>
+         </div>
+
+         <!-- -----------------------------  -->
+          <div class="card msmo-card-earnings">
+            <div class="card-header">
+              <span class="card-header-text">BALANCE : </span>
+                <a href="#" id="toggleBalance" class="link">
+              <i class="icon material-icons ">visibility</i>
+            </a></div>
+            <div class="card-content card-content-padding">
+              <div class="earnings-amount">$53,732.70</div>  
+              <div class="earnings-amount-text">as of July 13, 2025</div> 
+            </div>
+            <div class="card-footer">
+              <a class="link no-ripple"><i class="material-icons">account_balance_wallet</i> Balance</a>
+              <a class="link no-ripple"><i class="material-icons">payments</i> Payout</a>
+              <a class="link no-ripple"><i class="material-icons">stacked_line_chart</i> Earnings</a>
+
+            </div>
+          </div>
+
+      <!-- 
+        
+          
+
+          -->
+
+      <div class="block msmo-block-payment-connect">
+         <p class="grid grid-cols-1 grid-gap text-align-center">
+            To receive payouts, connect your PayPal.
+            <button class="button button-large button-fill msmo-button-fill-blue">
+            CONNECT YOUR <img src="images/logo-paypal-white.png" height="25" style="margin-left: 10px;">
+            </button>
          </p>
       </div>
-   </div>
+
+
+
+         <div class="block-title">INSIGHTS</div>
+<div class="block">
+    <canvas id="myLineChart" width="100%" height="100"></canvas>
+</div>
+
+         <!-- -----------------------------  -->
+         <div class="block-title">MY TRANSACTIONS</div>
+
+<div class="list media-list msmo-media-list-clients">
+      <ul>
+        <li>
+          <a class="item-link" href="#">
+            <div class="item-content">
+              <div class="item-media"><img 
+                  src="images/logo-chanel.jpg" />
+              </div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Chanel Creative Team</div>
+                  <div class="item-after text-color-green">+$500</div>
+                </div>
+                <div class="item-subtitle">Photoshoot <span>&#9679;</span> 2025 Collection Ad</div>
+                <div class="item-text"><span class="badge  label color-green">COMPLETED</span> July 19, 2025</div>
+              </div>
+            </div>
+          </a>
+        </li>
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-gucci.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Male Specimen Models</div>
+          <div class="item-after text-color-red">-$10</div>
+        </div>
+        <div class="item-subtitle">Premium Subscription <span>&#9679;</span> July 26 - August 26</div>
+        <div class="item-text"><span class="badge label color-red">BILLED</span>  July 16, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-netflix.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Netflix Philippines</div>
+          <div class="item-after text-color-green">+$750</div>
+        </div>
+        <div class="item-subtitle">Series <span>&#9679;</span> Squid Games 4 Video Shoot</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+
+        <li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-paypal.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Payout to Paypal</div>
+          <div class="item-after text-color-red">-$850</div>
+        </div>
+        <div class="item-subtitle">June 2025 <span>&#9679;</span> seansumido@gmail.com</div>
+        <div class="item-text"><span class="badge  label  color-red">PAID OUT</span> July 18, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-louis-vuitton.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Louis Vuitton Menswear</div>
+          <div class="item-after text-color-blue">$1,200</div>
+        </div>
+        <div class="item-subtitle">Lookbook <span>&#9679;</span> FW25 Paris Edition</div>
+        <div class="item-text"><span class="badge  label  color-blue">PROCESSING</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-gucci.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Gucci Creative Studio</div>
+          <div class="item-after text-color-green">+$750</div>
+        </div>
+        <div class="item-subtitle">Editorial <span>&#9679;</span> Vogue Italia Special</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-rolex.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Rolex Brand Campaign</div>
+          <div class="item-after text-color-yellow">$2,000</div>
+        </div>
+        <div class="item-subtitle">Timepiece Portraits <span>&#9679;</span> 2025 Explorer II</div>
+        <div class="item-text"><span class="badge label color-gold">ON HOLD</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-versace.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Versace Editorial Team</div>
+          <div class="item-after text-color-green">+$680</div>
+        </div>
+        <div class="item-subtitle">Runway BTS <span>&#9679;</span> Milan Fashion Week</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 2, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+        </li>
+      </ul>
+    </div>
+    <!-- ------------------------------------- -->
+      <div class="block">
+        <div class="grid grid-cols-1 grid-gap">
+          <a href="#tab-earnings-02" class="link button msmo-button-primary">VIEW ALL TRANSACTIONS</a>
+        </div>
+      </div>
+         <!-- -----------------------------  -->
+
+      </swiper-slide>
+      <!-- /////////////////////////////////////// -->
+      <swiper-slide id="tab-earnings-02" class="page-content tab">
+         <div class="block msmo-block-header-big">
+            <h1>Transaction History</h1>   
+            <p>View your past earnings and payments.</p>
+         </div>
+
+         <div class="block-title">JULY 2025</div>
+
+<div class="list media-list msmo-media-list-clients">
+      <ul>
+        <li>
+          <a class="item-link" href="#">
+            <div class="item-content">
+              <div class="item-media"><img 
+                  src="images/logo-chanel.jpg" />
+              </div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Chanel Creative Team</div>
+                  <div class="item-after text-color-green">+$500</div>
+                </div>
+                <div class="item-subtitle">Photoshoot <span>&#9679;</span> 2025 Collection Ad</div>
+                <div class="item-text"><span class="badge  label color-green">COMPLETED</span> July 19, 2025</div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-netflix.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Netflix Philippines</div>
+          <div class="item-after text-color-green">+$750</div>
+        </div>
+        <div class="item-subtitle">Series <span>&#9679;</span> Squid Games 4 Video Shoot</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+
+        <li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-paypal.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Payout to Paypal</div>
+          <div class="item-after text-color-red">-$850</div>
+        </div>
+        <div class="item-subtitle">June 2025 <span>&#9679;</span> seansumido@gmail.com</div>
+        <div class="item-text"><span class="badge  label  color-red">WITHDRAWN</span> July 18, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-louis-vuitton.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Louis Vuitton Menswear</div>
+          <div class="item-after text-color-blue">$1,200</div>
+        </div>
+        <div class="item-subtitle">Lookbook <span>&#9679;</span> FW25 Paris Edition</div>
+        <div class="item-text"><span class="badge  label  color-blue">PROCESSING</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-gucci.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Gucci Creative Studio</div>
+          <div class="item-after text-color-green">+$750</div>
+        </div>
+        <div class="item-subtitle">Editorial <span>&#9679;</span> Vogue Italia Special</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-rolex.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Rolex Brand Campaign</div>
+          <div class="item-after text-color-yellow">$2,000</div>
+        </div>
+        <div class="item-subtitle">Timepiece Portraits <span>&#9679;</span> 2025 Explorer II</div>
+        <div class="item-text"><span class="badge label color-gold">ON HOLD</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-versace.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Versace Editorial Team</div>
+          <div class="item-after text-color-green">+$680</div>
+        </div>
+        <div class="item-subtitle">Runway BTS <span>&#9679;</span> Milan Fashion Week</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 2, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+        </li>
+      </ul>
+    </div>
+
+
+
+         <div class="block-title">JUNE 2025</div>
+
+<div class="list media-list msmo-media-list-clients">
+      <ul>
+        <li>
+          <a class="item-link" href="#">
+            <div class="item-content">
+              <div class="item-media"><img 
+                  src="images/logo-bench.jpg" />
+              </div>
+              <div class="item-inner">
+                <div class="item-title-row">
+                  <div class="item-title">Bench/</div>
+                  <div class="item-after text-color-green">+$700</div>
+                </div>
+                <div class="item-subtitle">Fashion Show <span>&#9679;</span> Body of Work 2025</div>
+                <div class="item-text"><span class="badge  label color-green">COMPLETED</span> July 19, 2025</div>
+              </div>
+            </div>
+          </a>
+        </li>
+
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-netflix.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Netflix Philippines</div>
+          <div class="item-after text-color-green">+$750</div>
+        </div>
+        <div class="item-subtitle">Series <span>&#9679;</span> Squid Games 4 Video Shoot</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+
+        <li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-paypal.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Payout to Paypal</div>
+          <div class="item-after text-color-red">-$850</div>
+        </div>
+        <div class="item-subtitle">June 2025 <span>&#9679;</span> seansumido@gmail.com</div>
+        <div class="item-text"><span class="badge  label  color-red">WITHDRAWN</span> July 18, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-louis-vuitton.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Louis Vuitton Menswear</div>
+          <div class="item-after text-color-blue">$1,200</div>
+        </div>
+        <div class="item-subtitle">Lookbook <span>&#9679;</span> FW25 Paris Edition</div>
+        <div class="item-text"><span class="badge  label  color-blue">PROCESSING</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-gucci.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Gucci Creative Studio</div>
+          <div class="item-after text-color-green">+$750</div>
+        </div>
+        <div class="item-subtitle">Editorial <span>&#9679;</span> Vogue Italia Special</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-rolex.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Rolex Brand Campaign</div>
+          <div class="item-after text-color-yellow">$2,000</div>
+        </div>
+        <div class="item-subtitle">Timepiece Portraits <span>&#9679;</span> 2025 Explorer II</div>
+        <div class="item-text"><span class="badge label color-gold">ON HOLD</span>  July 15, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+<li>
+  <a class="item-link">
+    <div class="item-content">
+      <div class="item-media"><img  src="images/logo-versace.jpg" /></div>
+      <div class="item-inner">
+        <div class="item-title-row">
+          <div class="item-title">Versace Editorial Team</div>
+          <div class="item-after text-color-green">+$680</div>
+        </div>
+        <div class="item-subtitle">Runway BTS <span>&#9679;</span> Milan Fashion Week</div>
+        <div class="item-text"><span class="badge label color-green">COMPLETED</span>  July 2, 2025</div>
+      </div>
+    </div>
+  </a>
+</li>
+
+        </li>
+      </ul>
+    </div>
+
+
+      </swiper-slide>
+      <!-- /////////////////////////////////////// -->
+   </swiper-container>
+
+   <!-- ////////////////////////////////////// -->
+
 </div>

@@ -24,6 +24,14 @@ self.__WB_MANIFEST = [
   },
   {
     revision: '1',
+    url: 'css/utilities.css'
+  },
+  {
+    revision: '1',
+    url: 'css/components.css'
+  },
+  {
+    revision: '1',
     url: 'js/routes.js'
   },
   {

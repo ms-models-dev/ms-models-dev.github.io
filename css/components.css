@@ -11,12 +11,488 @@
 
 
 /* List Summary */
-.list.list-side-summary.inset{background:#f1f1f2}
+.list.list-side-summary.inset{background:#f8f8f9;}
 .list.list-side-summary li .item-media .icon{font-size:20px;color:#ceaa42}
-.list.list-side-summary li .item-title{font-family:"Compose";font-size:18px;color:#000}
-.list.list-side-summary li .badge{background:#000;color:#ccc}
+.list.list-side-summary li .item-title{font-family:"Compose";font-size:16px;color:#000}
+.list.list-side-summary li .badge{background:#000;color:#fff}
 
 .dark .list.list-side-summary.inset{background:#121212}
 .dark .list.list-side-summary li .item-media .icon{font-size:20px;color:#ceaa42}
 .dark .list.list-side-summary li .item-title{font-family:"Compose";font-size:16px;color:#fff}
 .dark .list.list-side-summary li .badge{background:#000;color:#ccc}
+
+/* Accordion */
+.panel .accordion-item-content .list ul li a{margin-left: 10px;color: #ceaa42;}
+
+/* Toggle Theme */
+.panel #themeLabel{ font-family:"Compose";font-size:16px; }
+
+/* /////// HEADER///////  */
+.msmo-block-header-big{margin:0;margin-top:20px;margin-bottom:20px}
+.msmo-block-header-big h1,.msmo-block-header-big h2,.msmo-block-header-big h3{margin:0;font-family:'Compose'}
+.msmo-block-header-big h2{font-size:26px}
+.msmo-block-header-big p{margin-top:-1px;font-family:'Manrope Regular';font-size:13px;line-height:16px;color:var(--gray-700)}
+.msmo-block-header-big p b{color:#000;font-weight:700}
+.dark .msmo-block-header-big h1,
+.dark .msmo-block-header-big h2,
+.dark .msmo-block-header-big h3{margin:0;font-family:'Compose'; color: #fff}
+.dark .msmo-block-header-big p{color:var(--gray-500)}
+.dark .msmo-block-header-big p b{color:#fff;font-weight:700}
+
+
+/* /////// EARNINGS ///////  */
+
+/* Card Earnings */
+.msmo-card-earnings{
+  background: linear-gradient(to bottom right, #ceaa42, #1a1a1a);
+  color: white;
+}
+.msmo-card-earnings .card-header a .icon{
+  color: #fff;
+  font-size: 18px;
+}
+.msmo-card-earnings .card-header-text{
+  font-family: "Montserrat Bold";
+  font-size: 14px;
+}
+.msmo-card-earnings .card-content .earnings-amount{
+  margin-top: 15px;padding-bottom: 0px;
+  font-family: "Compose";
+  font-size: 35px;
+}
+
+.msmo-card-earnings .card-content .earnings-amount-text{
+  margin-top: -10px;
+  font-family: "Montserrat Regular";
+  font-size: 13px;
+  color: #cccccc;
+}
+
+.msmo-card-earnings .card-footer a{
+  padding-left: 5px;
+  padding-right: 15px;
+  font-family: "Manrope Bold";
+  font-size: 13px;
+  line-height: 13px;
+  color: #fff;
+}
+.msmo-card-earnings .card-footer a:first-child{
+  padding-left: 0px;
+
+}
+.msmo-card-earnings .card-footer a .material-icons{
+  margin-right: 10px;
+  margin-left: 5px;
+  color: #ceaa42;
+}
+
+
+.msmo-block-payment-connect{
+  color: #4f5152;
+  line-height: 15px;
+}
+.msmo-block-payment-connect .msmo-button-fill-blue{
+  color: #fff;
+  background: #253b80;
+  font-family: "Montserrat Bold";
+}
+.dark .msmo-button-fill-blue{
+  color: #fff;
+  background: #253b80;
+  font-family: "Montserrat Bold";
+}
+
+.dark .msmo-block-payment-connect{
+  color: #939697;
+}
+
+.msmo-button-primary{
+  color:#ceaa42;
+  font-family: "Montserrat Bold";
+  border: 1px #c4cacf solid;
+}
+
+
+.dark .msmo-button-primary{
+  color:#ceaa42;
+  border: 1px #443f31 solid;
+}
+.dark .msmo-button-primary:active{
+  color:#fff;
+}
+
+
+#myLineChart {
+  height: 180px !important;
+  max-height: 180px;
+}
+
+/*  Transactions */
+.msmo-media-list-clients .item-media img{
+  /*border-radius: 50%; */
+  height: 65px;
+  width: 65px;
+  border: 1px #cdcecf solid;
+}
+.msmo-media-list-clients .item-inner .item-title{
+  margin-bottom: 0px; padding-bottom: 0px;
+  font-family: "Compose";
+  font-size: 18px;
+  color: #000;
+}
+.msmo-media-list-clients .item-inner .item-after{
+  font-family: "Compose";
+  font-size: 16px;
+}
+.msmo-media-list-clients .item-inner .item-subtitle{
+    margin-top: -2px; padding-top: 0px;
+  font-family: "Compose";
+  font-size: 16px;
+  color: #686869;
+}
+.msmo-media-list-clients .item-inner .item-subtitle span{
+  margin-left:5px; margin-right: 5px;
+    display: inline-block;
+  font-family: "Compose";
+  color: #ccc;
+}
+
+.msmo-media-list-clients .item-inner .item-text{
+  font-family: "Manrope Regular";
+  font-size: 13px;
+  color: #6a6c6d;
+}
+.msmo-media-list-clients .item-inner .item-text span{
+  font-family: "Manrope Bold";
+  color: #d9d9db;
+}
+.msmo-media-list-clients .item-inner .item-text span.badge{
+  margin-right: 10px;
+  font-family: "Manrope Bold";
+  font-weight: bold;
+  font-size: 11px;
+  color: #fff;
+}
+
+
+
+/* Dark */
+.dark .msmo-media-list-clients .item-media img{
+  border: 1px #424345 solid;
+}
+.dark .msmo-media-list-clients .item-inner .item-title{
+  color: #fff;
+}
+.dark .msmo-media-list-clients .item-inner .item-subtitle{
+  font-family: "Compose",-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #bfbfbf;
+}
+.dark .msmo-media-list-clients .item-inner .item-subtitle span{
+  margin-left:5px; margin-right: 5px;
+    display: inline-block;
+  font-family: "Compose",-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #5f6161;
+}
+.dark .msmo-media-list-clients .item-inner .item-text{
+  font-family: "Manrope Regular";
+  color: #bfc1c2;
+}
+.dark .msmo-media-list-clients .item-inner .item-text span{
+  font-family: "Manrope Regular";
+  color: #515153;
+}
+
+.dark .msmo-media-list-clients .item-inner .item-text span.badge{
+  font-family: "Manrope Bold";
+  font-size: 11px;
+  color: #fff;
+
+}
+
+.msmo-media-list-clients li:first-child {
+  border-top: 1px solid  #e3e4e5;
+}
+.msmo-media-list-clients li:last-child {
+  border-bottom: none;
+}
+.msmo-media-list-clients li{
+  border-bottom: 1px solid #e3e4e5; 
+  padding-top:3px; 
+  padding-bottom: 5px;
+}
+
+.dark .msmo-media-list-clients li:first-child {
+  border-top: 1px solid  #181818;
+}
+.dark .msmo-media-list-clients li{
+  border-bottom: 1px solid #181818; 
+
+}
+.dark  .msmo-media-list-clients li:last-child {
+  border-bottom: none;
+}
+
+
+/* /////// SAVED PAGE ///////  */
+.msmo-image-clients img{
+  border:1px #e0e0e0 solid;
+  width: 100%;
+  max-width: 100%;
+}
+
+.dark .msmo-image-clients img{
+  border:1px #212121 solid;
+}
+
+
+
+.media-list-job-details ul li .item-title{
+   font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 20px;
+   color: #ceaa42;
+ }
+.media-list-job-details ul li .item-subtitle.subtitle-job-type{
+  margin-top: -5px; margin-bottom:15px ;padding-top: 0;
+
+   font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 17px;
+   color: #000;
+ }
+  .media-list-job-details ul li .item-subtitle.subtitle-job-date,
+   .media-list-job-details ul li .item-subtitle.subtitle-job-venue,
+ .media-list-job-details ul li .item-subtitle.subtitle-job-location{
+  margin-top: 3px; margin-bottom:3px ;padding-top: 0;
+
+   font-family:'Manrope Bold',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 14px; line-height: 14px;
+   color: var(--gray-900);
+ }
+
+.media-list-job-details ul li .item-subtitle .material-icons{
+  padding-right: 10px;
+  font-size: 15px;
+   color: #ceaa42;
+ }
+
+ .media-list-job-details ul li .item-text{
+  padding-top: 15px;
+   font-family:'Montserrat Regular',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 13px; line-height: 15px;
+   color: var(--gray-700);
+ }
+
+
+
+
+ .dark  .media-list-job-details ul li .item-subtitle.subtitle-job-type{
+   color: #fff;
+ }
+ .dark  .media-list-job-details ul li .item-subtitle.subtitle-job-date,
+ .dark   .media-list-job-details ul li .item-subtitle.subtitle-job-venue,
+ .dark  .media-list-job-details ul li .item-subtitle.subtitle-job-location{
+   color: #fff;
+ }
+
+ .dark  .media-list-job-details ul li .item-subtitle .material-icons{
+   color: #ceaa42;
+ }
+
+ .dark .media-list-job-details ul li .item-text{
+   color: var(--gray-300);
+ }
+
+/* ////////////////////////////////// */
+.msmo-events{
+
+  padding-bottom: 25px;
+}
+.msmo-events .block-title{
+  margin-top: 0; padding-top: 10px;
+  margin-bottom: 0; padding-bottom: 5px;
+}
+.msmo-events .events-title{
+    padding-top: 15px;
+    margin: 0px 15px 0px 15px;
+     font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 24px; line-height: 26px;
+   color: #000;
+}
+
+.msmo-events .events-title-with-link a{
+    padding-top: 15px;
+    margin: 0px 15px 0px 15px;
+     font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 24px; line-height: 26px;
+   color: #000;
+}
+.msmo-events .events-subtitle{
+    margin: 0px 15px 0px 15px;
+   font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 18px;
+   color: #ceaa42;
+
+}
+.msmo-events .events-text{
+    margin: 0px 15px 0px 15px;
+   font-family:'Manrope Bold',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 15px; line-height: 15px;
+   color: var(--gray-900);
+
+}
+.dark .msmo-events .events-title{
+   color: #fff;
+}
+.dark .msmo-events .events-title-with-link a{
+   color: #fff;
+}
+.dark .msmo-events .events-title a{
+   color: #fff;
+}
+.dark .msmo-events .events-subtitle{
+   color: #ceaa42;
+
+}
+.dark .msmo-events .events-text{
+   color: var(--gray-500);
+
+}
+
+
+.msmo-media-list-job-preview ul li .item-title{
+   font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 20px; line-height: 20px;
+   color: #ceaa42;
+ }
+.msmo-media-list-job-preview ul li .item-subtitle{
+    padding-top: 2px; padding-bottom: 2px;
+   font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 16px; line-height:19px ;
+   color: #000;
+ }
+.msmo-media-list-job-preview ul li .item-subtitle span{
+  margin-left:5px; margin-right: 5px;
+    display: inline-block;
+  font-family: "Compose",-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #5f6161;
+}
+ .msmo-media-list-job-preview ul li .item-subtitle.text{
+  margin-bottom: 5px;
+   font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 15px; line-height:18px ;
+  color: var(--gray-500);
+ }
+  .msmo-media-list-job-preview ul li .item-after{
+
+   font-family:'Manrope Bold',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 15px; line-height: 15px;
+  color: #000;
+ }
+
+ .msmo-media-list-job-preview .item-text{
+  padding-top: 5px;
+   font-family:'Montserrat Regular',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 12px; line-height: 15px;
+    color: #babbbb;
+ }
+
+ .msmo-media-list-job-preview li:first-child {
+  border-top: 1px solid  #e3e4e5;
+}
+ .msmo-media-list-job-preview li:last-child {
+  border-bottom:none;
+}
+ .msmo-media-list-job-preview li{
+  border-bottom: 1px solid #e3e4e5; 
+  padding-top:5px; 
+  padding-bottom: 5px;
+}
+
+
+
+.dark  .msmo-media-list-job-preview ul li .item-title{
+
+ }
+.dark  .msmo-media-list-job-preview ul li .item-subtitle{
+   color: #fff;
+ }
+ .dark .msmo-media-list-job-preview ul li .item-subtitle.text{
+  color: var(--gray-500);
+ }
+ .dark  .msmo-media-list-job-preview ul li .item-after{
+
+  color: #fff;
+ }
+
+ .dark  .msmo-media-list-job-preview .item-text{
+    color: #626465;
+ }
+
+
+.dark .msmo-media-list-job-preview li:first-child {
+  border-top: 1px solid  var(--gray-900);
+}
+.dark .msmo-media-list-job-preview li:last-child {
+  border-bottom:none;
+}
+.dark  .msmo-media-list-job-preview li{
+  border-bottom: 1px solid var(--gray-900); 
+}
+
+
+
+.slider-thumbnail-img{
+  width: 100%;
+  max-width: 100%;
+  border: 1px var(--gray-300) solid;
+}
+
+.slider-thumbnail-title{
+  font-family: "Compose";
+  font-size:16px; line-height: 18px;
+  padding: 10px 10px 0px 10px;
+}
+
+.dark .slider-thumbnail-img{
+  width: 100%;
+  max-width: 100%;
+  border: 1px var(--gray-900) solid;
+}
+
+.msmo-orbit-container{
+  padding-bottom: 25px;
+}
+.msmo-orbit-container .orbit-container-toptitle{
+  margin:0;padding:10px 15px 0px 15px;font-family:"Montserrat Bold";font-size:14px;color:#ceaa42
+}
+.msmo-orbit-container .orbit-container-title{
+    padding-top: 15px;
+    margin: 0px 15px 0px 15px;
+     font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 24px; line-height: 26px;
+   color: #000;
+}
+.msmo-orbit-container .orbit-container-subtitle{
+    margin: 0px 15px 0px 15px;
+   font-family:'Compose',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 18px;
+   color: #ceaa42;
+}
+.msmo-orbit-container .orbit-container-text{
+    margin: 0px 15px 0px 15px;
+   font-family:'Manrope Bold',-apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 15px; line-height: 15px;
+   color: var(--gray-900);
+}
+
+
+.dark .msmo-orbit-container .orbit-container-title{
+   color: #fff;
+}
+.dark .msmo-orbit-container .orbit-container-subtitle{
+   color: #ceaa42;
+}
+.dark .msmo-orbit-container .orbit-container-text{
+
+   color: var(--gray-500);
+}

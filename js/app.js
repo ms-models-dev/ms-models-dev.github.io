@@ -64,3 +64,41 @@ $('#my-login-screen .login-button').on('click', function () {
       document.getElementById('themeLabel').innerText = 'Light Mode';
     }
   });
+var userBalance = 1222; // Replace this with your actual balance check
+
+if (userBalance > 0) {
+  document.getElementById('has-balance').style.display = 'block';
+} else {
+  document.getElementById('no-balance').style.display = 'block';
+}
+
+document.addEventListener('page:init', function (e) {
+    var ctx = document.getElementById('myLineChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'JUne'],
+        datasets: [{
+          label: 'Earnings',
+          data: [500, 700, 400, 800, 650, 650],
+          backgroundColor: 'rgba(206, 170, 66, 0.2)',
+          borderColor: '#ceaa42',
+          borderWidth: 2,
+          fill: true,
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  });
